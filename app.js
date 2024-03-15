@@ -8,12 +8,19 @@ let errMsg = document.querySelector('#err')
 // document.querySelectorAll
 button.onclick = function(){
     if (input.value === ''){
-        errMsg.innerHTML = "Error!!!! Please input a value"
-
+        errMsg.innerHTML = "Error!!!! Please input a value";
+        // setInterval(() => stopError(), 3000);
+        setInterval(() => stopError(), 3000);
     }
 }
 
+// function stopError(){
+//     errMsg.style.display = "none";
+// }
 
+function stopError(){
+    errMsg.style.display = "none"
+}
 // let userData = {
 //     username: "",
 //     password: "",
